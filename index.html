@@ -1,12 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+
     <title>Сложно сосредоточиться</title>
-    <script src="./scripts/script.js"></script>
+
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/dark.css" />
+    <link rel="stylesheet" href="./styles/light.css" />
+
+    <script src="./scripts/script.js" defer></script>
   </head>
+
   <body class="page">
     <header class="header decorated-zone">
       <nav class="header__theme-menu">
@@ -18,6 +29,7 @@
               День
             </button>
           </li>
+
           <li class="header__theme-menu-item">
             <button
               class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
@@ -26,6 +38,7 @@
               Авто
             </button>
           </li>
+
           <li class="header__theme-menu-item">
             <button
               class="header__theme-menu-button header__theme-menu-button_type_dark"
@@ -35,6 +48,125 @@
           </li>
         </ul>
       </nav>
+
+      <span class="header__record" aria-hidden="true">REC</span>
+
+      <h1 class="header__title">no focus</h1>
+
+      <p class="header__description">
+        Сложно сосредоточиться?
+      </p>
     </header>
+
+    <main class="content">
+      <section class="content__section">
+        <h2 class="content__title title-decor">
+          Почему сложно сосредоточиться?
+        </h2>
+
+        <div class="content__text">
+          <article class="content__article">
+            <h3 class="content__subtitle">
+              Многозадачность
+            </h3>
+
+            <p>
+              Постоянное переключение между задачами мешает
+              сосредоточиться на чём-то одном. Когда внимание
+              постоянно перескакивает, становится сложнее
+              доводить начатое до конца.
+            </p>
+          </article>
+
+          <article class="content__article">
+            <h3 class="content__subtitle">
+              Много информации
+            </h3>
+
+            <p>
+              Большой поток информации и уведомлений может
+              отвлекать от важных дел. Мозгу требуется время,
+              чтобы переключиться и снова сосредоточиться.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content__section">
+        <h2 class="content__title title-decor">
+          Как концентрироваться лучше
+        </h2>
+
+        <div class="content__text">
+          <article class="content__article">
+            <h3 class="content__subtitle">
+              Определи главную задачу
+            </h3>
+
+            <p>
+              Выбери одно дело, которое сейчас важнее остальных.
+              Запиши его и сосредоточься на выполнении.
+            </p>
+          </article>
+
+          <article class="content__article">
+            <h3 class="content__subtitle">
+              Убери отвлекающие факторы
+            </h3>
+
+            <p>
+              По возможности отключи ненужные уведомления
+              и подготовь рабочее место заранее.
+            </p>
+          </article>
+
+          <article class="content__article">
+            <h3 class="content__subtitle">
+              Делай перерывы
+            </h3>
+
+            <p>
+              Небольшие перерывы помогают переключиться
+              и вернуться к задаче с новой концентрацией.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content__section">
+        <h2 class="content__title title-decor">
+          Как отвлечься от дел
+        </h2>
+
+        <div class="content__text">
+          <article class="content__article">
+            <h3 class="content__subtitle">
+              Смена деятельности
+            </h3>
+
+            <p>
+              Иногда полезно ненадолго переключиться:
+              прогуляться, послушать музыку или заняться
+              чем-нибудь другим.
+            </p>
+          </article>
+
+          <article class="content__article">
+            <h3 class="content__subtitle">
+              Планирование
+            </h3>
+
+            <p>
+              Раздели большую задачу на небольшие шаги.
+              Так проще понимать, с чего начать и что делать дальше.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer decorated-zone">
+      <h2 class="footer__title">focus</h2>
+    </footer>
   </body>
 </html>
