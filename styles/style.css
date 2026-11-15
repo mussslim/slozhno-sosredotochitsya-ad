@@ -1,5 +1,70 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  background-image: var(--cover-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.header__theme-menu {
+  justify-self: center;
+  align-self: center;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  padding: 2px 13px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: var(--accent-color);
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+.header__theme-menu-button:hover {
+  border-color: var(--decorated-zone-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+  pointer-events: none;
+}
+
+@media (width >= 768px) {
+  .header {
+    padding: 20px;
+  }
+
+  .header__theme-menu {
+    justify-self: end;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
 }
