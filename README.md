@@ -1,1 +1,1 @@
-slozhno-sosredotochitsya-ad
+https://github.com/mussslim/slozhno-sosredotochitsya-ad
