@@ -1,4 +1,21 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+
+:root {
+  /* Шрифты */
+  --main-font: 'IBM Plex Mono', monospace;
+  --accent-font: 'IBM Plex Mono', monospace;
+
+  /* Начертания */
+  --font-weight: 400;
+  --font-weight-bold: 700;
+
+  /* Основные цвета тёмной темы */
+  --background-color: #000028;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
+  --main-color: #000028;
+  --decorated-zone-color: #ff0070;
+
+  /* Фоновое изображение */
+  --cover-image: url('../images/cover-image-dark.png');
+}
